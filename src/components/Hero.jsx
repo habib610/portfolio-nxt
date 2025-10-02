@@ -43,7 +43,7 @@ export default function Hero() {
     return (
         <AnimatePresence mode="wait">
             <div className="relative overflow-hidden">
-                <section className="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto  text-white ">
+                <section className="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto  text-white pt-30 md:pt-0 ">
                     {/* Left Content */}
                     <div className="flex-1 space-y-6 text-center md:text-left">
                         <motion.h1
@@ -101,7 +101,7 @@ export default function Hero() {
                         >
                             <Link
                                 href="#projects"
-                                className="px-6 py-3 bg-indigo-600 rounded-xl font-medium hover:bg-indigo-700 transition"
+                                className="px-6 py-3 bg-blue rounded-xl font-medium hover:bg-indigo-700 transition"
                             >
                                 View Projects
                             </Link>
@@ -134,7 +134,7 @@ export default function Hero() {
                                 alt="Profile Picture"
                                 width={350}
                                 height={350}
-                                className="rounded-full shadow-lg border-4 border-indigo-600"
+                                className="rounded-full  border-4 border-blue"
                             />
                         </motion.div>
                     </motion.div>
