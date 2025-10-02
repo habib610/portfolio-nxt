@@ -1,48 +1,8 @@
 "use client";
 
-import { IMAGES } from "@/asset";
+import { experiences } from "@/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-const experiences = [
-    {
-        role: "Full-Stack Software Engineer",
-        company: "Hypersrot Technologies",
-        logo: IMAGES.hypersrot_dark,
-        period: "May 2023 – Present",
-        location: "Remote – Bangalore, India",
-        details: [
-            "Implemented scalable and secure backend solutions using Java Spring Boot",
-            "Mentored frontend team, providing technical guidance and support",
-            "Designed and developed responsive UI with React.js and TailwindCSS",
-            "Created API documentation for smoother development processes",
-        ],
-    },
-    {
-        role: "Frontend Developer Intern",
-        company: "Hypersrot Technologies",
-        logo: IMAGES.hypersrot_dark,
-        period: "Jan 2022 – Apr 2023",
-        location: "Remote – Bangalore, India",
-        details: [
-            "Developed responsive websites using React.js, HTML, and CSS",
-            "Followed coding best practices and performed code reviews",
-            "Collaborated with senior developers on existing features",
-        ],
-    },
-    {
-        role: "Frontend Engineer Intern",
-        company: "Swedit Ptd. Ltd",
-        logo: IMAGES.swedit_dark,
-        period: "Apr 2021 – Jul 2021",
-        location: "Remote – Singapore",
-        details: [
-            "Built new screens and functionalities for web & mobile apps",
-            "Maintained and developed REST APIs with Node.js and Firebase",
-            "Collaborated with product managers to refine processes",
-        ],
-    },
-];
 
 export default function ExperienceTree() {
     return (
@@ -57,14 +17,13 @@ export default function ExperienceTree() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl font-extrabold text-center mb-16"
                 >
-                    My <span className="text-indigo-500">Journey</span>
+                    My <span className="text-blue">Journey</span>
                 </motion.h2>
 
                 <div className="relative">
                     {/* Central line (desktop) */}
                     <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-indigo-200 h-full"></div>
 
-                    {/* Central line (mobile) */}
                     <div className="absolute md:hidden left-1/2 transform -translate-x-1/2 w-0.5 bg-indigo-200 h-full"></div>
 
                     <div className="space-y-20 relative">
@@ -85,7 +44,7 @@ export default function ExperienceTree() {
                                 }`}
                             >
                                 {/* Logo Node - Desktop */}
-                                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-indigo-500 w-16 h-16 rounded-full items-center justify-center shadow-lg z-10">
+                                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-blue w-16 h-16 rounded-full items-center justify-center shadow-lg z-10">
                                     <Image
                                         src={exp.logo}
                                         alt={`${exp.company} logo`}
@@ -104,7 +63,7 @@ export default function ExperienceTree() {
                                     }`}
                                 >
                                     <div className="bg-gray-50 rounded-xl shadow-md p-6">
-                                        <h3 className="text-xl font-bold text-indigo-600">
+                                        <h3 className="text-xl font-bold text-blue">
                                             {exp.role}
                                         </h3>
                                         <p className="text-sm font-medium text-gray-600">
@@ -124,7 +83,7 @@ export default function ExperienceTree() {
                                 {/* Mobile Card */}
                                 <div className="md:hidden w-full flex flex-col items-center space-y-4 relative z-10">
                                     {/* Logo node connected to line */}
-                                    <div className="bg-white border-4 border-indigo-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="bg-white border-4 border-blue w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
                                         <Image
                                             src={exp.logo}
                                             alt={`${exp.company} logo`}
@@ -135,7 +94,7 @@ export default function ExperienceTree() {
                                     </div>
 
                                     <div className="bg-gray-50 rounded-xl shadow-md p-6 w-full">
-                                        <h3 className="text-xl font-bold text-indigo-600">
+                                        <h3 className="text-xl font-bold text-blue">
                                             {exp.role}
                                         </h3>
                                         <p className="text-sm font-medium text-gray-600">
