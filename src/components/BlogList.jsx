@@ -26,7 +26,7 @@ const BlogList = ({ blogs }) => {
 
                     {/* Blog Content */}
                     <div className="p-6 flex flex-col space-y-4">
-                        <h3 className="text-xl font-bold text-indigo-600">
+                        <h3 className="text-xl font-bold text-secondary">
                             {blog.title}
                         </h3>
                         <p className="text-gray-600 text-sm line-clamp-3">

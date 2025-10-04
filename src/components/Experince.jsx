@@ -17,7 +17,7 @@ export default function ExperienceTree() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl font-extrabold text-center mb-16"
                 >
-                    My <span className="text-secondary">Journey</span>
+                    My <span className="text-primary">Journey</span>
                 </motion.h2>
 
                 <div className="relative">

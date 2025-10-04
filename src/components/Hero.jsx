@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 const roles = [
     "Creative Developer",
     "Front-End Engineer",
-    "Full Stack Developer",
+    "Full Stack Engineer",
     "UI/UX Explorer",
     "Tech Enthusiast",
     "Lifelong Learner",
@@ -53,34 +53,38 @@ export default function Hero() {
                             className="text-3xl md:text-6xl font-bold leading-tight text-gray-700"
                         >
                             Hi, I’m{" "}
-                            <span className="text-secondary">Habib</span>
+                            <span className="text-secondary font-secondary">
+                                Habib
+                            </span>
                             <br />{" "}
-                            <span className="hidden md:inline-block">
-                                A{" "}
-                            </span>{" "}
-                            <motion.span
-                                key={roles[index]}
-                                variants={container}
-                                initial="hidden"
-                                animate="visible"
-                                exit="exit"
-                                transition={{ duration: 0.6 }}
-                                className="inline-block text-secondary"
-                            >
-                                {roles[index].split("").map((char, i) => (
-                                    <motion.span
-                                        key={i}
-                                        variants={letter}
-                                        transition={{
-                                            duration: 0.4,
-                                            ease: "easeOut",
-                                        }}
-                                        className="inline-block"
-                                    >
-                                        {char === " " ? "\u00A0" : char}
-                                    </motion.span>
-                                ))}
-                            </motion.span>
+                            <div className="di">
+                                <span className="hidden text-nowrap md:inline-block">
+                                    A{" "}
+                                </span>{" "}
+                                <motion.span
+                                    key={roles[index]}
+                                    variants={container}
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="exit"
+                                    transition={{ duration: 0.6 }}
+                                    className="inline-block text-primary"
+                                >
+                                    {roles[index].split("").map((char, i) => (
+                                        <motion.span
+                                            key={i}
+                                            variants={letter}
+                                            transition={{
+                                                duration: 0.4,
+                                                ease: "easeOut",
+                                            }}
+                                            className="inline-block"
+                                        >
+                                            {char === " " ? "\u00A0" : char}
+                                        </motion.span>
+                                    ))}
+                                </motion.span>
+                            </div>
                         </motion.h1>
 
                         <motion.p

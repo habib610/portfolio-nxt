@@ -6,32 +6,33 @@ import ClientNav from "./ClientNav";
 
 export default function Header() {
     return (
-        <header className="bg-white text-primary p-4 shadow-lg fixed inset-x-0 top-0 z-50">
-            <div className="container mx-auto flex justify-between items-center">
-                <Link href="/" className="text-2xl font-bold">
+        <header className="fixed top-0 inset-x-0 z-50 bg-white/5 backdrop-blur-xl border-b border-white/20 shadow-md">
+            <div className="container mx-auto flex justify-between items-center px-6 py-3">
+                {/* Logo */}
+                <Link href="/" className="flex items-center space-x-2">
                     <Image
                         alt="logo"
                         src={IMAGES.logo}
-                        width={150}
-                        height={150}
+                        width={140}
+                        height={140}
                         className="cursor-pointer"
                     />
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex space-x-6">
-                    {NAV_LINKS.map((link, idx) => (
-                        <div key={link.href}>
-                            <Link
-                                href={link.href}
-                                className="hover:text-rose-700 text-primary transition"
-                            >
-                                {link.name}
-                            </Link>
-                        </div>
+                <nav className="hidden md:flex space-x-8">
+                    {NAV_LINKS.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className="text-secondary hover:text-white font-medium transition duration-200"
+                        >
+                            {link.name}
+                        </Link>
                     ))}
                 </nav>
 
+                {/* Mobile Menu */}
                 <ClientNav />
             </div>
         </header>

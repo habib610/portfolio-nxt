@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body,
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
@@ -7,6 +11,10 @@ body {
 @theme {
     --color-primary: #ff2d55;
     --color-secondary: #007aff;
+
+    --font-primary: "Geist", sans-serif;
+    --font-primary-mono: "Geist Mono", monospace;
+    --font-secondary: "Nunito", sans-serif;
 }
 
 @layer components {

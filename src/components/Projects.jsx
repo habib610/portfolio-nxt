@@ -13,7 +13,7 @@ export default async function Projects() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl font-extrabold text-center mb-16"
                 >
-                    Featured <span className="text-secondary">Projects</span>
+                    Featured <span className="text-primary">Projects</span>
                 </h2>
 
                 <ProjectList data={data} />

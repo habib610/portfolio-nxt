@@ -16,7 +16,7 @@ export default function AboutMe() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="text-4xl md:text-5xl font-extrabold text-center md:text-left"
                 >
-                    About <span className="text-secondary">Me</span>
+                    About <span className="text-primary">Me</span>
                 </motion.h2>
 
                 {/* Intro Paragraph */}
@@ -27,8 +27,8 @@ export default function AboutMe() {
                     className="text-lg leading-relaxed text-center md:text-left max-w-3xl"
                 >
                     Hi, I’m{" "}
-                    <span className="font-semibold text-secondary">Habib</span>,
-                    a passionate{" "}
+                    <span className="font-semibold text-primary">Habib</span>, a
+                    passionate{" "}
                     <span className="font-semibold">
                         Full-Stack Software Engineer{" "}
                     </span>

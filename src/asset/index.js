@@ -1,5 +1,6 @@
 export const IMAGES = {
     logo: "/images/logo_dark.svg",
+    logoLight: "/images/logo_light.svg",
     habib: "/images/habib1.jpg",
     square: "/images/square.jpg",
     hypersrot_dark: "/images/Hypersrot_logo_dark.png",

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const ProjectList = ({ data }) => {
     return (
@@ -26,7 +27,7 @@ const ProjectList = ({ data }) => {
 
                     {/* Content */}
                     <div className="p-6 flex flex-col space-y-4">
-                        <h3 className="text-2xl font-bold text-indigo-600">
+                        <h3 className="text-2xl font-bold text-secondary">
                             {project.title}
                         </h3>
                         <p className="text-gray-600 text-sm">
@@ -38,30 +39,34 @@ const ProjectList = ({ data }) => {
                             {project.technologies.map((tech) => (
                                 <span
                                     key={tech.id}
-                                    className="px-3 py-1 text-xs rounded-full bg-indigo-100 text-indigo-600 font-medium"
+                                    className="px-3 py-1 text-xs rounded-full bg-indigo-100 text-secondary font-medium"
                                 >
                                     {tech.name}
                                 </span>
                             ))}
                         </div>
 
-                        {/* Links */}
-                        <div className="flex space-x-4 mt-4">
+                        <div className="flex space-x-6 mt-4">
+                            {/* Live Demo */}
                             <a
                                 href={project.liveSite}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-sm font-medium text-indigo-600 hover:underline"
+                                className="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-800 transition"
                             >
-                                Live Demo
+                                <FaGlobe className="text-lg" />
+                                <span>Live Demo</span>
                             </a>
+
+                            {/* GitHub */}
                             <a
                                 href={project.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-sm font-medium text-gray-600 hover:underline"
+                                className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition"
                             >
-                                GitHub
+                                <FaGithub className="text-lg" />
+                                <span>GitHub</span>
                             </a>
                         </div>
                     </div>

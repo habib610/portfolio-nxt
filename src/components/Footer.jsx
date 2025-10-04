@@ -1,6 +1,10 @@
 "use client";
+import { IMAGES } from "@/asset";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
+import { BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
     return (
@@ -9,9 +13,13 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Brand / About */}
                     <motion.div>
-                        <h2 className="text-2xl font-bold text-white mb-4">
-                            Habibur Rahman
-                        </h2>
+                        <Image
+                            src={IMAGES.logoLight}
+                            alt="logo_light"
+                            height={90}
+                            width={120}
+                            className="mb-2"
+                        />
                         <p className="text-sm leading-relaxed">
                             Full-Stack Software Engineer crafting modern web
                             applications with clean design, accessibility, and
@@ -75,28 +83,28 @@ export default function Footer() {
                         </h3>
                         <div className="flex space-x-6">
                             <a
-                                href="mailto:habibur4224287@gmail.com"
+                                href="mailto:rhabib.dev@gmail.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-indigo-400 transition"
+                                className="hover:text-indigo-400 transition flex items-center justify-center gap-1"
                             >
-                                Email
+                                <AiFillMail size={20} /> Email
                             </a>
                             <a
                                 href="https://github.com/habib610"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-indigo-400 transition"
+                                className="hover:text-indigo-400 transition flex items-center justify-center gap-1"
                             >
-                                GitHub
+                                <AiFillGithub size={20} /> GitHub
                             </a>
                             <a
-                                href="https://linkedin.com/in/habibur-rahman"
+                                href="https://www.linkedin.com/in/habib610/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-indigo-400 transition"
+                                className="hover:text-indigo-400 transition flex items-center justify-center gap-1"
                             >
-                                LinkedIn
+                                <BsLinkedin size={20} /> LinkedIn
                             </a>
                         </div>
                     </motion.div>
