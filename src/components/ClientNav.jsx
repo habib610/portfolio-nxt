@@ -61,7 +61,7 @@ export default function ClientNav() {
                                 >
                                     <Link
                                         href={link.href}
-                                        className="block px-4 py-2 hover:bg-rose-800 text-blue rounded transition"
+                                        className="block px-4 py-2 hover:bg-rose-800 text-secondary rounded transition"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {link.name}

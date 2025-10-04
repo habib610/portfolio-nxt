@@ -29,7 +29,7 @@ export default function Hero() {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.09 }, // stagger each letter
+            transition: { staggerChildren: 0.09 },
         },
         exit: { opacity: 0 },
     };
@@ -52,7 +52,8 @@ export default function Hero() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="text-3xl md:text-6xl font-bold leading-tight text-gray-700"
                         >
-                            Hi, I’m <span className="text-blue">Habib</span>
+                            Hi, I’m{" "}
+                            <span className="text-secondary">Habib</span>
                             <br />{" "}
                             <span className="hidden md:inline-block">
                                 A{" "}
@@ -64,7 +65,7 @@ export default function Hero() {
                                 animate="visible"
                                 exit="exit"
                                 transition={{ duration: 0.6 }}
-                                className="inline-block text-blue"
+                                className="inline-block text-secondary"
                             >
                                 {roles[index].split("").map((char, i) => (
                                     <motion.span
@@ -101,7 +102,7 @@ export default function Hero() {
                         >
                             <Link
                                 href="#projects"
-                                className="px-6 py-3 bg-blue rounded-xl font-medium hover:bg-indigo-700 transition"
+                                className="px-6 py-3 bg-secondary rounded-xl font-medium hover:bg-indigo-700 transition"
                             >
                                 View Projects
                             </Link>
@@ -134,7 +135,7 @@ export default function Hero() {
                                 alt="Profile Picture"
                                 width={350}
                                 height={350}
-                                className="rounded-full  border-4 border-blue"
+                                className="rounded-full  border-4 border-secondary"
                             />
                         </motion.div>
                     </motion.div>
@@ -155,7 +156,7 @@ export default function Hero() {
                     <div className="absolute bottom-[-10%] right-[-5%] w-80 h-80 bg-gradient-to-r from-yellow-200 via-orange-200 to-red-200 opacity-20 blur-3xl rounded-full" />
 
                     {/* Center floating blob */}
-                    <div className="absolute top-1/3 left-1/2 w-64 h-64 bg-gradient-to-r from-green-200 via-teal-200 to-blue-200 opacity-25 blur-3xl rounded-full" />
+                    <div className="absolute top-1/3 left-1/2 w-64 h-64 bg-gradient-to-r from-green-200 via-teal-200 to-secondary-200 opacity-25 blur-3xl rounded-full" />
                 </motion.div>
             </div>
         </AnimatePresence>

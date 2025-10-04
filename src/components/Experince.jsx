@@ -17,7 +17,7 @@ export default function ExperienceTree() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl font-extrabold text-center mb-16"
                 >
-                    My <span className="text-blue">Journey</span>
+                    My <span className="text-secondary">Journey</span>
                 </motion.h2>
 
                 <div className="relative">
@@ -44,7 +44,7 @@ export default function ExperienceTree() {
                                 }`}
                             >
                                 {/* Logo Node - Desktop */}
-                                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-blue w-16 h-16 rounded-full items-center justify-center shadow-lg z-10">
+                                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-secondary w-16 h-16 rounded-full items-center justify-center shadow-lg z-10">
                                     <Image
                                         src={exp.logo}
                                         alt={`${exp.company} logo`}
@@ -63,7 +63,7 @@ export default function ExperienceTree() {
                                     }`}
                                 >
                                     <div className="bg-gray-50 rounded-xl shadow-md p-6">
-                                        <h3 className="text-xl font-bold text-blue">
+                                        <h3 className="text-xl font-bold text-secondary">
                                             {exp.role}
                                         </h3>
                                         <p className="text-sm font-medium text-gray-600">
@@ -83,7 +83,7 @@ export default function ExperienceTree() {
                                 {/* Mobile Card */}
                                 <div className="md:hidden w-full flex flex-col items-center space-y-4 relative z-10">
                                     {/* Logo node connected to line */}
-                                    <div className="bg-white border-4 border-blue w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="bg-white border-4 border-secondary w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
                                         <Image
                                             src={exp.logo}
                                             alt={`${exp.company} logo`}
@@ -94,7 +94,7 @@ export default function ExperienceTree() {
                                     </div>
 
                                     <div className="bg-gray-50 rounded-xl shadow-md p-6 w-full">
-                                        <h3 className="text-xl font-bold text-blue">
+                                        <h3 className="text-xl font-bold text-secondary">
                                             {exp.role}
                                         </h3>
                                         <p className="text-sm font-medium text-gray-600">

@@ -16,7 +16,7 @@ export default function AboutMe() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="text-4xl md:text-5xl font-extrabold text-center md:text-left"
                 >
-                    About <span className="text-blue">Me</span>
+                    About <span className="text-secondary">Me</span>
                 </motion.h2>
 
                 {/* Intro Paragraph */}
@@ -27,10 +27,10 @@ export default function AboutMe() {
                     className="text-lg leading-relaxed text-center md:text-left max-w-3xl"
                 >
                     Hi, I’m{" "}
-                    <span className="font-semibold text-blue">Habib</span>, a
-                    passionate{" "}
+                    <span className="font-semibold text-secondary">Habib</span>,
+                    a passionate{" "}
                     <span className="font-semibold">
-                        Full-Stack Software Engineer
+                        Full-Stack Software Engineer{" "}
                     </span>
                     with over{" "}
                     <span className="font-semibold">2 years of experience</span>{" "}
@@ -54,7 +54,7 @@ export default function AboutMe() {
                     className="grid md:grid-cols-2 gap-8"
                 >
                     <div>
-                        <h3 className="text-2xl font-bold mb-4 text-blue">
+                        <h3 className="text-2xl font-bold mb-4 text-secondary">
                             Frontend
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
@@ -64,7 +64,7 @@ export default function AboutMe() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold mb-4 text-blue">
+                        <h3 className="text-2xl font-bold mb-4 text-secondary">
                             Backend
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
@@ -74,7 +74,7 @@ export default function AboutMe() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold mb-4 text-blue">
+                        <h3 className="text-2xl font-bold mb-4 text-secondary">
                             Databases
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
@@ -83,7 +83,7 @@ export default function AboutMe() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold mb-4 text-blue">
+                        <h3 className="text-2xl font-bold mb-4 text-secondary">
                             DevOps & Tools
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">

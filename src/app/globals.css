@@ -6,7 +6,7 @@ body {
 }
 @theme {
     --color-primary: #ff2d55;
-    --color-blue: #007aff;
+    --color-secondary: #007aff;
 }
 
 @layer components {
