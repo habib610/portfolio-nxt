@@ -24,7 +24,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
-                    className="text-lg leading-relaxed text-center md:text-left max-w-3xl"
+                    className="text-lg leading-relaxed text-left max-w-3xl"
                 >
                     Hi, I’m{" "}
                     <span className="font-semibold text-primary">Habib</span>, a
