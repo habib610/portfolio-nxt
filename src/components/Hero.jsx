@@ -45,7 +45,7 @@ export default function Hero() {
             <div className="relative overflow-hidden">
                 <section className="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto  text-white pt-30 md:pt-0 px-6 md:px-4 xl:px-0 ">
                     {/* Left Content */}
-                    <div className=" w-full md:w-[60%] lg:flex-1  space-y-6 text-left">
+                    <div className=" w-full md:w-[60%] lg:w-[60%] xl:flex-1  space-y-6 text-left">
                         <motion.h1
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
