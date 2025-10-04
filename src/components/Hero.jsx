@@ -43,14 +43,14 @@ export default function Hero() {
     return (
         <AnimatePresence mode="wait">
             <div className="relative overflow-hidden">
-                <section className="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto  text-white pt-30 md:pt-0 px-6 md:px-0 ">
+                <section className="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto  text-white pt-30 md:pt-0 px-6 md:px-4 xl:px-0 ">
                     {/* Left Content */}
-                    <div className="flex-1 space-y-6 text-left">
+                    <div className=" w-full md:w-[60%] lg:flex-1  space-y-6 text-left">
                         <motion.h1
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
-                            className="text-3xl md:text-6xl font-bold leading-tight text-gray-700"
+                            className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold leading-tight text-gray-700"
                         >
                             Hi, I’m{" "}
                             <span className="text-secondary font-secondary">
