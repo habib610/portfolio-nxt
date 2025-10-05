@@ -34,6 +34,11 @@ export const metadata = {
         "Software Engineer Portfolio",
         "Developer Portfolio",
         "Nextjs Developer Portfolio",
+        "rhabib",
+        "rhabibdev",
+        "rhabib.dev",
+        "habib_610",
+        "habib6100",
     ],
     authors: [{ name: "Habibur Rahman" }],
     openGraph: {
