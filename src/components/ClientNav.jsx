@@ -11,7 +11,7 @@ export default function ClientNav() {
     return (
         <>
             <button
-                className="md:hidden focus:outline-none"
+                className="md:hidden text-secondary  focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <motion.svg
@@ -45,7 +45,8 @@ export default function ClientNav() {
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3, ease: "easeIn" }}
-                        className="md:hidden mt-4 bg-white shadow-lg  absolute inset-x-0 top-[40px]"
+                        className="md:hidden mt-4  absolute inset-x-0 top-[37px]  backdrop-blur-xl bg-white/95 border border-white/30
+        rounded-2xl shadow-2xl"
                     >
                         <nav className="flex flex-col space-y-2">
                             {NAV_LINKS.map((link, idx) => (
