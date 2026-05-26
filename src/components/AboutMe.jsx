@@ -33,7 +33,9 @@ export default function AboutMe() {
                         Full-Stack Software Engineer{" "}
                     </span>
                     with over{" "}
-                    <span className="font-semibold">2 years of experience</span>{" "}
+                    <span className="font-semibold">
+                        3+ years of experience
+                    </span>{" "}
                     building scalable and user-focused web applications. I love
                     crafting solutions that combine{" "}
                     <span className="font-semibold">clean design</span>,
@@ -59,7 +61,7 @@ export default function AboutMe() {
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
                             <li>React.js, Next.js, Redux</li>
-                            <li>JavaScript (ES6+), HTML5, CSS3</li>
+                            <li>JavaScript (ES6+), Typescript, HTML5, CSS3</li>
                             <li>TailwindCSS</li>
                         </ul>
                     </div>
@@ -69,7 +71,7 @@ export default function AboutMe() {
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
                             <li>Java, Spring Boot</li>
-                            <li>Node.js, Express.js</li>
+                            <li>Node.js, Nest.js, Express.js</li>
                             <li>RESTful APIs</li>
                         </ul>
                     </div>
@@ -78,7 +80,7 @@ export default function AboutMe() {
                             Databases
                         </h3>
                         <ul className="list-disc list-inside space-y-1 text-gray-700">
-                            <li>MySQL, PostgreSQL</li>
+                            <li>MySQL, PostgreSQL, Supabase</li>
                             <li>MongoDB</li>
                         </ul>
                     </div>
