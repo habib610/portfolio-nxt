@@ -4,5 +4,6 @@ export const IMAGES = {
     habib: "/images/habib1.jpg",
     square: "/images/square.jpg",
     hypersrot_dark: "/images/Hypersrot_logo_dark.png",
+    codegres: "/images/codegres.png",
     swedit_dark: "/images/SWEDIT_dark.png",
 };
