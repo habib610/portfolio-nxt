@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import ImageWithFallback from "./ImageWithFallback";
 
 const BlogList = ({ blogs }) => {
     return (
@@ -16,7 +16,7 @@ const BlogList = ({ blogs }) => {
                 >
                     {/* Blog Image */}
                     <div className="relative w-full h-56">
-                        <Image
+                        <ImageWithFallback
                             src={blog.image}
                             alt={blog.title}
                             fill

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import ImageWithFallback from "./ImageWithFallback";
 
 const ProjectList = ({ data }) => {
     return (
@@ -17,7 +17,7 @@ const ProjectList = ({ data }) => {
                 >
                     {/* Project Image */}
                     <div className="relative w-full h-56">
-                        <Image
+                        <ImageWithFallback
                             src={project.image}
                             alt={project.title}
                             fill
