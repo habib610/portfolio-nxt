@@ -5,7 +5,7 @@ import { useState } from "react";
 
 /**
  * ElegantFallbackImage
- * A wrapper around Next.js Image that provides a beautiful, 
+ * A wrapper around Next.js Image that provides a beautiful,
  * seed-based gradient fallback if the image fails to load.
  */
 const ElegantFallbackImage = ({ src, alt, fill, className, ...props }) => {
@@ -21,7 +21,7 @@ const ElegantFallbackImage = ({ src, alt, fill, className, ...props }) => {
     };
 
     const hash = getHash(alt || "default");
-    
+
     // Elegant gradient palettes (Tailwind classes)
     const palettes = [
         "from-indigo-500 via-purple-500 to-pink-500",
@@ -45,13 +45,29 @@ const ElegantFallbackImage = ({ src, alt, fill, className, ...props }) => {
             const y = (hash * (i + 3)) % 100;
             const isCircle = (hash + i) % 2 === 0;
             const opacity = 0.05 + ((hash * (i + 4)) % 10) / 100;
-            
+
             shapes.push(
                 isCircle ? (
-                    <circle key={i} cx={`${x}%`} cy={`${y}%`} r={size} fill="white" opacity={opacity} />
+                    <circle
+                        key={i}
+                        cx={`${x}%`}
+                        cy={`${y}%`}
+                        r={size}
+                        fill="white"
+                        opacity={opacity}
+                    />
                 ) : (
-                    <rect key={i} x={`${x}%`} y={`${y}%`} width={size} height={size} fill="white" opacity={opacity} transform={`rotate(${(hash * (i + 5)) % 360} ${x}% ${y}%)`} />
-                )
+                    <rect
+                        key={i}
+                        x={`${x}%`}
+                        y={`${y}%`}
+                        width={size}
+                        height={size}
+                        fill="white"
+                        opacity={opacity}
+                        transform={`rotate(${(hash * (i + 5)) % 360} ${x}% ${y}%)`}
+                    />
+                ),
             );
         }
         return shapes;
@@ -59,12 +75,16 @@ const ElegantFallbackImage = ({ src, alt, fill, className, ...props }) => {
 
     if (error || !src) {
         return (
-            <div 
+            <div
                 className={`w-full h-full relative flex items-center justify-center bg-gradient-to-br ${selectedGradient} ${className} overflow-hidden`}
                 {...props}
             >
                 <div className="absolute inset-0 pointer-events-none">
-                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        width="100%"
+                        height="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         {generateShapes()}
                     </svg>
                 </div>
@@ -85,6 +105,7 @@ const ElegantFallbackImage = ({ src, alt, fill, className, ...props }) => {
             className={className}
             onError={() => setError(true)}
             {...props}
+            loading="lazy"
         />
     );
 };

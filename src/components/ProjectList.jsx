@@ -22,6 +22,7 @@ const ProjectList = ({ data }) => {
                             alt={project.title}
                             fill
                             className="object-cover"
+                            loading="lazy"
                         />
                     </div>
 

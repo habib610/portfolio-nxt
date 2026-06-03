@@ -16,6 +16,7 @@ export default function Header() {
                         width={140}
                         height={140}
                         className="cursor-pointer"
+                        loading="lazy"
                     />
                 </Link>
 

@@ -2,7 +2,7 @@ const { IMAGES } = require("@/asset");
 
 export const experiences = [
     {
-        role: "Software Engineer",
+        role: "Software Engineer (Contract)",
         company: "Codegres",
         logo: IMAGES.codegres,
         period: "Jan 2026 – Present",
@@ -20,7 +20,7 @@ export const experiences = [
         role: "Full-Stack Software Engineer",
         company: "Hypersrot Technologies",
         logo: IMAGES.hypersrot_dark,
-        period: "May 2023 – Apr 2026",
+        period: "May 2023 – Sep 2025",
         location: "Remote – Bangalore, India",
         details: [
             "Implemented scalable and secure backend solutions using Java Spring Boot",

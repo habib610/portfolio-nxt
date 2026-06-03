@@ -140,6 +140,7 @@ export default function Hero() {
                                 width={350}
                                 height={350}
                                 className="rounded-full  border-4 border-secondary"
+                                loading="lazy"
                             />
                         </motion.div>
                     </motion.div>
